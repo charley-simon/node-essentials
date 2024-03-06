@@ -6,4 +6,4 @@ promiseRead()
   })
   .catch((error) => {
     // handle error
-  });
+  })

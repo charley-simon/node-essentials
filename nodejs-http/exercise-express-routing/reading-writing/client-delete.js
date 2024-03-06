@@ -1,4 +1,4 @@
-const http = require('http');
+const http = require('http')
 
 const productToDelete = {
   id: 1
@@ -17,11 +17,11 @@ const options = {
 }
 
 const request = http.request(options, (res) => {
-  let body = '';
-  res.on('data', (chunk) => { body += "" + chunk; })
+  let body = ''
+  res.on('data', (chunk) => { body += '' + chunk })
   res.on('error', (err) => console.error('err', err))
   res.on('end', () => { console.log('response', body) })
   res.on('close', () => { console.log('Closed connection') })
 })
 
-request.end(data);
+request.end(data)

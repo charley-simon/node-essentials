@@ -1,16 +1,16 @@
 // Create a basic promise function
-function promiseFunction() {
+function promiseFunction () {
   return new Promise((resolve, reject) => {
     // do something
 
     if (error) {
       // indicate success
-      reject(error);
+      reject(error)
     } else {
       // indicate error
-      resolve(data);
+      resolve(data)
     }
-  });
+  })
 }
 
 // Call a basic promise function
@@ -20,4 +20,4 @@ promiseFunction()
   })
   .catch((error) => {
     // handle error
-  });
+  })
